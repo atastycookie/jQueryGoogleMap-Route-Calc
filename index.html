@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//IT" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<style type="text/css">
+.jqm_option{ /* class of buttons */
+ margin-left:10px;
+ display:inline-block;
+ padding:5px;
+ background:#00ccff;
+ border-radius: 5px 5px;
+ border-radius: 5px 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		cursor:pointer;
+		color:#fff;
+		text-shadow:0px 0px 0px;
+		margin-bottom:5px;
+ font-size:10pt;
+}
+.jqm_option-c{ /* class to hover state of buttons */
+  background:#0099ff;
+}
+</style>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  /> 
+	<meta name="author" content="Roman Ananyev">
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&language=en&libraries=places"></script>     
+    <script type="text/javascript" src="js/jquery-JQMap_RouteCalc.js"></script>
+	<script type="text/javascript">
+		$(function(){          
+	     $('.jqmap').JQMap({
+	      jqm_Height : '500',	
+	      jqm_StartOpacity : 8,
+	      jqm_OverlayColor : '#fff',
+	      jqm_Fixdestination : 'Moscow, Russia',
+	      jqm_TexStartPoint : 'Moscow, Russia'     
+	     });
+	});
+	</script>     
+</head> 
+<body>
+<div class="jqmap" style="background:#ccc"></div>
+
+</body> 
+</html>
